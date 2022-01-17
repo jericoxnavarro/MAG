@@ -140,7 +140,7 @@ export class Gif {
 		const encoder = new GIFEncoder(this.width, this.height)
 
 		encoder.start()
-		encoder.setRepeat(this.repeat ? 0 : -1)
+		encoder.setRepeat(0)
 		encoder.setDelay(this.delay)
 		encoder.setQuality(this.quality)
 
