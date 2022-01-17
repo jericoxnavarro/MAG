@@ -103,6 +103,7 @@ export class Gif {
         const ctx = Canvas.getContext('2d');
         const encoder = new GIFEncoder(this.width, this.height);
         encoder.start();
+        encoder.setRepeat(0);
         encoder.setDelay(this.delay);
         encoder.setQuality(this.quality);
         for (const Frame of this.frames) {
